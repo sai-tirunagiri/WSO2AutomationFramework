@@ -1,5 +1,6 @@
 package com.quinnox.testautomation.dao;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -18,10 +19,10 @@ public class OrderImportImpl implements OrderImport {
 	private ResultSetMetaData resultSetColumnName;
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public Map getOrderHeaderDetails(){
+	public Map getOrderHeaderDetails() {
 		Connection conn = DBUtil.createConnection();
 		
-		String query = "select PO_Number,order_date,Fulfillment_Service_level,Customer_name,customer_email_address, po_amount,Total_tax_amount,first_name,last_name,country_code,external_order_ref from c_apps.c_ont_order_headers where po_number='123456789111'";
+		String query = "select PO_Number as ecommOrderId,order_date as createdAt,Fulfillment_Service_level as shippingMethod,Customer_name as lastName,customer_email_address as customerEmail, po_amount as totalPrice,Total_tax_amount as tax,first_name as firstName,last_name as lastName,country_code as countryCode,external_order_ref as ecommOrderId from c_apps.c_ont_order_headers where po_number='123456789111'";
 		try{
 			statement = conn.createStatement();
 			resultSet= statement.executeQuery(query);
@@ -30,7 +31,7 @@ public class OrderImportImpl implements OrderImport {
 			
 			while(resultSet.next()){
 			for (int i = 1; i <= columnCount; i++) {
-				System.out.println(resultSetColumnName.getColumnName(i)+":"+resultSet.getObject(i));
+				//System.out.println(resultSetColumnName.getColumnName(i)+":"+resultSet.getObject(i));
 				m1.put(resultSetColumnName.getColumnName(i), resultSet.getObject(i));
 				}
 			}
