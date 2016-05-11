@@ -1,9 +1,10 @@
 package com.quinnox.testautomation.dao;
 
 
-import java.util.Map;
+import java.util.HashMap;
+
 
 public interface OrderImport {
 	@SuppressWarnings("rawtypes")
-	public Map getOrderHeaderDetails();
+	public HashMap getOrderHeaderDetails();
 }

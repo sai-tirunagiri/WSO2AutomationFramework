@@ -1,49 +1,51 @@
 package com.quinnox.testautomation.genericlib;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import java.util.*;
 
 public class JsonHelper {
-	public static void toMap(JSONObject object){
-		System.out.println("Method call happened");
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-		Iterator<String> keysItr = object.keys();
-		while(keysItr.hasNext()){
-			String key = keysItr.next();
-			Object value = object.get(key);
-			
-			if(value instanceof JSONArray){
-				System.out.println("True");
-				 toList((JSONArray) value);
-			}
-			
-			/*else if(value instanceof JSONObject){
-				value = toMap((JSONObject) value);
-			}
-			map.put(key, value);
-		}
-		return map; */
-	}
-  }
-	
-	public static void toList(JSONArray array) throws JSONException{
-		List<HashMap<String, Object>> listOfMap = new ArrayList<HashMap<String, Object>>();
-		
-		for (int i = 0; i < array.length(); i++) {
-			Object value = array.get(i);
-			System.out.println(value);
-//			if(value instanceof JSONArray){
-//				value = to((JSONArray)value);
-//			}
-//			
-//			else if(value instanceof JSONObject){
-//				value = toMap((JSONObject) value);
-//			}
-		//	list.add(value);
-		}
-	//	return list;
+	static JsonParser parser = new JsonParser();
+
+	public static HashMap<String, Object> createHashMapFromJsonString(String json) {
+
+	    JsonObject object = (JsonObject) parser.parse(json);
+	    Set<Map.Entry<String, JsonElement>> set = object.entrySet();
+	    Iterator<Map.Entry<String, JsonElement>> iterator = set.iterator();
+	    HashMap<String, Object> map = new HashMap<String, Object>();
+
+	    while (iterator.hasNext()) {
+
+	        Map.Entry<String, JsonElement> entry = iterator.next();
+	        String key = entry.getKey();
+	        JsonElement value = entry.getValue();
+
+	        if (null != value) {
+	            if (!value.isJsonPrimitive()) {
+	                if (value.isJsonObject()) {
+
+	                    map.put(key, createHashMapFromJsonString(value.toString()));
+	                } else if (value.isJsonArray() && value.toString().contains(":")) {
+
+	                    List<HashMap<String, Object>> list = new ArrayList<>();
+	                    JsonArray array = value.getAsJsonArray();
+	                    if (null != array) {
+	                        for (JsonElement element : array) {
+	                            list.add(createHashMapFromJsonString(element.toString()));
+	                        }
+	                        map.put(key, list);
+	                    }
+	                } else if (value.isJsonArray() && !value.toString().contains(":")) {
+	                    map.put(key, value.getAsJsonArray());
+	                }
+	            } else {
+	                map.put(key, value.getAsString());
+	            }
+	        }
+	    }
+	    return map;
 	}
 }

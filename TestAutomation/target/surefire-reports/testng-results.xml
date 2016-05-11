@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5112" started-at="2016-05-11T20:03:07Z" finished-at="2016-05-11T20:03:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5112" started-at="2016-05-11T20:03:07Z" finished-at="2016-05-11T20:03:13Z">
+      <class name="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest">
+        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest@2acf57e3]" name="configBeforeClass" is-config="true" duration-ms="0" started-at="2016-05-11T15:03:08Z" finished-at="2016-05-11T15:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method status="PASS" signature="verifyPostRequest()[pri:0, instance:org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest@2acf57e3]" name="verifyPostRequest" duration-ms="1415" started-at="2016-05-11T15:03:08Z" finished-at="2016-05-11T15:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostRequest -->
+      </class> <!-- org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest -->
+      <class name="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus">
+        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus@39ba5a14]" name="configBeforeClass" is-config="true" duration-ms="19" started-at="2016-05-11T15:03:07Z" finished-at="2016-05-11T15:03:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method status="PASS" signature="verifyApiStatus()[pri:0, instance:org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus@39ba5a14]" name="verifyApiStatus" duration-ms="204" started-at="2016-05-11T15:03:07Z" finished-at="2016-05-11T15:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApiStatus -->
+      </class> <!-- org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus -->
+      <class name="org.quinnox.testautomation.validatedatatest.ValidateDataTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:org.quinnox.testautomation.validatedatatest.ValidateDataTest@506e6d5e]" name="initialize" is-config="true" duration-ms="2" started-at="2016-05-11T15:03:09Z" finished-at="2016-05-11T15:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateDataTest()[pri:0, instance:org.quinnox.testautomation.validatedatatest.ValidateDataTest@506e6d5e]" name="validateDataTest" duration-ms="3458" started-at="2016-05-11T15:03:09Z" finished-at="2016-05-11T15:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDataTest -->
+      </class> <!-- org.quinnox.testautomation.validatedatatest.ValidateDataTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

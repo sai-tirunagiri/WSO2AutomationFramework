@@ -25,6 +25,7 @@ public class ExcelLib {
 		return data;
 	}
 	
+	@SuppressWarnings("static-access")
 	public void setExcelData(String sheetName , int rowNum ,int colNum , String data) throws InvalidFormatException, IOException{
 		FileInputStream fis = new FileInputStream(filePath);
 		Workbook wb = WorkbookFactory.create(fis);
