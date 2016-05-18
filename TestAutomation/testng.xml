@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none" >
-	<test verbose="1" name="Test" group-by-instances="true" preserve-order="true">
+<suite name="Suite" parallel="none">
+	<test name="Test" preserve-order="true">
 		<classes>
-		 <class name="org.quinnox.testautomation.validatedatatest.ValidateDataTest" />
- 			<class name="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus" /> 
- 			
-			
+			<class name="org.quinnox.testautomation.postinvalidrequest.VerifyInvalidPostRequestTest" />
+			<class name="org.quinnox.testautomation.validatedatatest.ValidateDataTest" />
+			<class name="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus" />
 			<class name="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

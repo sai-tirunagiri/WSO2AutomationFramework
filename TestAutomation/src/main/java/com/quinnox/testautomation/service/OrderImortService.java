@@ -1,9 +1,6 @@
 package com.quinnox.testautomation.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
-
 import com.google.common.collect.MapDifference;
 import com.google.common.collect.Maps;
 import com.quinnox.testautomation.dao.OrderImport;
@@ -28,6 +25,7 @@ public class OrderImortService {
 		orderImportJsonMap = helper.createHashMapFromJsonString(jsonString.toLowerCase());
 		return orderImportJsonMap;
 	}
+	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean compareDBMapAndJsonMap(HashMap orderImportJsonMap, HashMap orderImportMap){
 		MapDifference<String, Object> difference = Maps.difference(orderImportJsonMap, orderImportMap);
@@ -38,11 +36,12 @@ public class OrderImortService {
 		}
 		return true;
 	}
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String mappedValues(HashMap orderImportJsonMap, HashMap orderImportMap){
 		MapDifference<String, Object> difference = Maps.difference(orderImportJsonMap, orderImportMap);
 		//System.out.println(difference.entriesDiffering());
-		//System.out.println(difference.entriesInCommon().keySet());
+		//System.out.println(difference.entriesInCommon());
 		String s = ""+difference.entriesInCommon();
 		CommonValuesMapping mapping = new CommonValuesMapping();
 		String entriesInCommon = mapping.commonValues(s);

@@ -1,3 +1,4 @@
 org\quinnox\testautomation\verifypostrequest\VerifyPostRequestTest.class
+org\quinnox\testautomation\postinvalidrequest\VerifyInvalidPostRequestTest.class
 org\quinnox\testautomation\verifyapistatus\VerifyRestApiStatus.class
 org\quinnox\testautomation\validatedatatest\ValidateDataTest.class
