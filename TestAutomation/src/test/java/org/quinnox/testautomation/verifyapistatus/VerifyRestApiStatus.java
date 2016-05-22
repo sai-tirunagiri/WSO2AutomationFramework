@@ -31,7 +31,7 @@ public class VerifyRestApiStatus {
 	@Test(priority=1)
 	public void verifyApiStatus() throws IOException, JSONException, InvalidFormatException, KeyManagementException, NoSuchAlgorithmException{
 		//Step 1: Get the Rest URL
-		String Resturl = "http://100.66.134.247:8280/orders/sources/ops";
+		String Resturl = "http://wso2-dev.dev.cloud.motorola.net:8280/orders/sources/ops";
 		//String recentRecordValue = excelLib.getExcelData("Sheet2", 0, 0);
 		
 		//step 2: map the rest URL and get the response from the API

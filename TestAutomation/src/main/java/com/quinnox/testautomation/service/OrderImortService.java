@@ -40,12 +40,14 @@ public class OrderImortService {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String mappedValues(HashMap orderImportJsonMap, HashMap orderImportMap){
 		MapDifference<String, Object> difference = Maps.difference(orderImportJsonMap, orderImportMap);
+		//System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
 		//System.out.println(difference.entriesDiffering());
 		//System.out.println(difference.entriesInCommon());
+		//System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
 		String s = ""+difference.entriesInCommon();
 		CommonValuesMapping mapping = new CommonValuesMapping();
 		String entriesInCommon = mapping.commonValues(s);
-		return difference.entriesDiffering() +""+entriesInCommon;
+		return difference.entriesDiffering()+" "+entriesInCommon;
 		
 	}
 	

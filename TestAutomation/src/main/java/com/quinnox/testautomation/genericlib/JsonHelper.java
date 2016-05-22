@@ -4,14 +4,15 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 
 import java.util.*;
 
 public class JsonHelper {
 	static JsonParser parser = new JsonParser();
-
+	
 	public static HashMap<String, Object> createHashMapFromJsonString(String json) {
-
+		
 	    JsonObject object = (JsonObject) parser.parse(json);
 	    Set<Map.Entry<String, JsonElement>> set = object.entrySet();
 	    Iterator<Map.Entry<String, JsonElement>> iterator = set.iterator();

@@ -3,16 +3,16 @@
 <suite verbose="0" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest">
-        <methods>
-          <include name="configBeforeClass"/>
-        </methods>
-      </class> <!-- org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest -->
       <class name="org.quinnox.testautomation.validatedatatest.ValidateDataTest">
         <methods>
           <include name="initialize"/>
         </methods>
       </class> <!-- org.quinnox.testautomation.validatedatatest.ValidateDataTest -->
+      <class name="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest">
+        <methods>
+          <include name="configBeforeClass"/>
+        </methods>
+      </class> <!-- org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest -->
       <class name="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus">
         <methods>
           <include name="configBeforeClass"/>

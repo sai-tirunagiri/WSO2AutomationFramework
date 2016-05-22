@@ -30,11 +30,11 @@ public class VerifyInvalidPostRequestTest {
 	@Test(priority=4)
 	public void verifyInvalidPostRequest() throws IOException, JSONException, InvalidFormatException, KeyManagementException, NoSuchAlgorithmException{
 		//Step 1: Get the Rest URL
-		String Resturl = "http://100.66.134.247:8280/orders/sources/ops";
+		String Resturl = "http://wso2-dev.dev.cloud.motorola.net:8280/orders/sources/ops";
 		
 		String jsonString = null;
 		try {
-			jsonString = eLib.getExcelData("Sheet1", 0, 0);
+			jsonString = eLib.getExcelDataForPost("Sheet1", 0, 0);
 		} catch (InvalidFormatException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
