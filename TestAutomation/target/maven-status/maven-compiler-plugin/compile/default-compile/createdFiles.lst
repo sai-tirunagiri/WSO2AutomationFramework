@@ -4,6 +4,7 @@ com\quinnox\testautomation\util\DBUtil.class
 com\quinnox\testautomation\dao\OrderImport.class
 sample\Sam.class
 org\quinnox\testautomation\verifyapistatus\VerifyRestApiStatus.class
+org\quinnox\testautomation\verifylineitems\ValidateLineItems.class
 org\quinnox\testautomation\validatedatatest\ValidateDataTest.class
 com\quinnox\testautomation\util\Sample.class
 org\quinnox\testautomation\verifypostrequest\VerifyPostRequestTest.class

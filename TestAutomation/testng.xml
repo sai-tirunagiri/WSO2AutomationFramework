@@ -3,11 +3,12 @@
 <suite name="Suite" parallel="none">
 	<test name="Test" preserve-order="true">
 		<classes>
-			<class name="org.quinnox.testautomation.postinvalidrequest.VerifyInvalidPostRequestTest" />
+			<class name="org.quinnox.testautomation.verifylineitems.ValidateLineItems" />
+			<class name="org.quinnox.testautomation.postinvalidrequest.VerifyInvalidPostRequestTest" />	
 			<class name="org.quinnox.testautomation.validatedatatest.ValidateDataTest" />
 			<class name="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus" />
 			<class name="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest" />
-
+				
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,6 +1,8 @@
 package com.quinnox.testautomation.service;
 
 import java.util.HashMap;
+import java.util.Set;
+
 import com.google.common.collect.MapDifference;
 import com.google.common.collect.Maps;
 import com.quinnox.testautomation.dao.OrderImport;
@@ -29,8 +31,6 @@ public class OrderImortService {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean compareDBMapAndJsonMap(HashMap orderImportJsonMap, HashMap orderImportMap){
 		MapDifference<String, Object> difference = Maps.difference(orderImportJsonMap, orderImportMap);
-		//System.out.println(difference.entriesDiffering());
-		//System.out.println(difference.entriesInCommon());
 		if(difference.entriesDiffering().isEmpty() && difference.entriesInCommon().isEmpty()){
 			return false;
 		}
@@ -40,15 +40,34 @@ public class OrderImortService {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String mappedValues(HashMap orderImportJsonMap, HashMap orderImportMap){
 		MapDifference<String, Object> difference = Maps.difference(orderImportJsonMap, orderImportMap);
-		//System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
-		//System.out.println(difference.entriesDiffering());
-		//System.out.println(difference.entriesInCommon());
-		//System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
 		String s = ""+difference.entriesInCommon();
 		CommonValuesMapping mapping = new CommonValuesMapping();
 		String entriesInCommon = mapping.commonValues(s);
 		return difference.entriesDiffering()+" "+entriesInCommon;
 		
+	}
+	
+	public Boolean getOrderMappedValues(){
+		HashMap<String, Integer> lineItemMap;
+		OrderImportImpl orderImportImpl = new OrderImportImpl();
+		lineItemMap = orderImportImpl.getLineItemsDetails();
+		Set<String> itemNumberKey = lineItemMap.keySet();
+		
+		for(String keySet : itemNumberKey){
+			if(keySet.contains("OC") && keySet.contains("OP") && keySet.contains("REF")){
+				int result1 = lineItemMap.get(keySet);
+				if( result1 == 0 ){
+					return true;
+				}
+			}
+			if(keySet.contains("ATO")){
+				int result1 = lineItemMap.get(keySet);
+				if( result1 != 0 ){
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 	
 }

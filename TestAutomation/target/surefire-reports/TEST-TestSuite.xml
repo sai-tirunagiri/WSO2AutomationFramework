@@ -1,163 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="17.457" tests="4" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="4" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="LOGONSERVER" value="\\ZHK37DSADC01"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
-    <property name="TITLE" value="Tomcat"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="JENKINS_URL" value="http://192.168.1.5:8085/jenkins/"/>
-    <property name="CATALINA_HOME" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
-    <property name="PSModulePath" value="C:\windows\system32\WindowsPowerShell\v1.0\Modules\"/>
-    <property name="USERDOMAIN" value="DSA"/>
-    <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="JAVA_OPTS" value=" -Djava.util.logging.config.file=&quot;C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\conf\logging.properties&quot; -Xms1024m -Xmx10246m -XX:NewSize=256m -XX:MaxNewSize=356m -XX:PermSize=256m -XX:MaxPermSize=356m -Dfile.encoding=EUC_CN -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Xms1024m -Xmx10246m -XX:NewSize=256m -XX:MaxNewSize=356m -XX:PermSize=256m -XX:MaxPermSize=356m -Dfile.encoding=EUC_CN"/>
-    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="java.version" value="1.7.0_45"/>
-    <property name="JOB_NAME" value="Functional Testing"/>
-    <property name="COMPUTERNAME" value="NARAYANLT-01"/>
-    <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
-    <property name="EXECUTABLE" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\bin\catalina.bat"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="user.name" value="narayan"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="windir" value="C:\windows"/>
-    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 37 Stepping 5, GenuineIntel"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="LOCALAPPDATA" value="C:\Users\narayan\AppData\Local"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="user.script" value=""/>
-    <property name="path.separator" value=";"/>
-    <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-Functional Testing-5"/>
-    <property name="windows_tracing_flags" value="3"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven32Main C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\webapps\jenkins\WEB-INF\lib\remoting-2.59.jar C:\Users\narayan\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven32-interceptor-1.7.jar C:\Users\narayan\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.7.jar 51218"/>
-    <property name="HUDSON_URL" value="http://192.168.1.5:8085/jenkins/"/>
-    <property name="JENKINS_SERVER_COOKIE" value="d21f1199b2c95c77"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.7.0_45/bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\narayan\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Users\narayan\AppData\Roaming\npm"/>
-    <property name="java.io.tmpdir" value="C:\Users\narayan\AppData\Local\Temp\"/>
-    <property name="APPDATA" value="C:\Users\narayan\AppData\Roaming"/>
-    <property name="user.language" value="en"/>
-    <property name="CATALINA_TMPDIR" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\temp"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="BUILD_URL" value="http://192.168.1.5:8085/jenkins/job/Functional%20Testing/5/"/>
-    <property name="JAVA_ENDORSED_DIRS" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\endorsed"/>
-    <property name="ACTION" value="start"/>
-    <property name="M2_HOME" value="C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME"/>
-    <property name="=C:" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\bin"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#5"/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="CATALINA_BASE" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68"/>
-    <property name="HUDSON_SERVER_COOKIE" value="d21f1199b2c95c77"/>
-    <property name="JRE_HOME" value="C:\Program Files\Java\jdk1.7.0_45"/>
-    <property name="_EXECJAVA" value="start &quot;Tomcat&quot; &quot;C:\Program Files\Java\jdk1.7.0_45\bin\java.exe&quot;"/>
-    <property name="_RUNJAVA" value="&quot;C:\Program Files\Java\jdk1.7.0_45\bin\java.exe&quot;"/>
-    <property name="MAVEN_HOME" value="C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME"/>
-    <property name="SESSIONNAME" value="Console"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="maven3.interceptor.common" value="C:\Users\narayan\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.7.jar"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="LOGGING_CONFIG" value="-Djava.util.logging.config.file=&quot;C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\conf\logging.properties&quot;"/>
-    <property name="HOMEPATH" value="\Users\narayan"/>
-    <property name="os.name" value="Windows 7"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="FP_NO_HOST_CHECK" value="NO"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="5"/>
-    <property name="maven3.interceptor" value="C:\Users\narayan\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven32-interceptor-1.7.jar"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME/bin;C:\Program Files\Java\jdk1.7.0_45/bin;C:\Program Files\Java\jdk1.7.0_45/bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\narayan\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Users\narayan\AppData\Roaming\npm;."/>
-    <property name="HOMEDRIVE" value="C:"/>
-    <property name="POM_GROUPID" value="org.testng"/>
-    <property name="POM_ARTIFACTID" value="testng"/>
-    <property name="java.class.version" value="51.0"/>
-    <property name="LOGGING_MANAGER" value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
-    <property name="_RUNJDB" value="&quot;C:\Program Files\Java\jdk1.7.0_45\bin\jdb.exe&quot;"/>
-    <property name="JOB_URL" value="http://192.168.1.5:8085/jenkins/job/Functional%20Testing/"/>
-    <property name="ANT_HOME" value="C:\Users\narayan\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7"/>
-    <property name="MAINCLASS" value="org.apache.catalina.startup.Bootstrap"/>
-    <property name="JENKINS_HOME" value="C:\Users\narayan\.jenkins"/>
-    <property name="BUILD_ID" value="5"/>
-    <property name="TEMP" value="C:\Users\narayan\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
-    <property name="M2" value="C:\Users\narayan\Downloads\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin\"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\narayan\Documents\GitHub\WSO2AutomationFramework\TestAutomation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\narayan\Documents\GitHub\WSO2AutomationFramework\TestAutomation"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\narayan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="PROCESSOR_REVISION" value="2505"/>
-    <property name="POM_VERSION" value="6.9.10"/>
-    <property name="HUDSON_HOME" value="C:\Users\narayan\.jenkins"/>
-    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="PATH+MAVEN" value="C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME/bin"/>
-    <property name="PROMPT" value="$P$G"/>
-    <property name="CURRENT_DIR" value="C:\Users\narayan\Downloads\apache-tomcat-7.0.68-windows-x64\apache-tomcat-7.0.68\bin"/>
-    <property name="java.vm.specification.version" value="1.7"/>
-    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_45"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="USERPROFILE" value="C:\Users\narayan"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\narayan\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1310573938064568599.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\narayan\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Users\narayan\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.1"/>
     <property name="user.home" value="C:\Users\narayan"/>
-    <property name="USERNAME" value="narayan"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="PROCESSOR_LEVEL" value="6"/>
-    <property name="USERDNSDOMAIN" value="dsa.mot-mobility.com"/>
-    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
-    <property name="user.dir" value="C:\Users\narayan\Documents\GitHub\WSO2AutomationFramework\TestAutomation"/>
-    <property name="ProgramW6432" value="C:\Program Files"/>
-    <property name="TMP" value="C:\Users\narayan\AppData\Local\Temp"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="java.vm.version" value="24.45-b08"/>
-    <property name="java.class.path" value="C:\Users\narayan\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven32-agent-1.7.jar;C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME\boot\plexus-classworlds-2.5.2.jar;C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME/conf/logging"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="WORKSPACE" value="C:\Users\narayan\.jenkins\jobs\Functional Testing\workspace"/>
-    <property name="ComSpec" value="C:\windows\system32\cmd.exe"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="SystemRoot" value="C:\windows"/>
-    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.runtime.version" value="1.7.0_45-b18"/>
-    <property name="ProgramFiles" value="C:\Program Files"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
-    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.7.0_45/bin"/>
-    <property name="user.country" value="US"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="maven.home" value="C:\Users\narayan\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M2_HOME"/>
-    <property name="JOB_BASE_NAME" value="Functional Testing"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="testng"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="narayan"/>
+    <property name="java.class.path" value="/C:/Users/narayan/eclipse/reporting-mars/eclipse/../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\narayan\Documents\GitHub\WSO2AutomationFramework\TestAutomation\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyApiStatus" classname="org.quinnox.testautomation.verifyapistatus.VerifyRestApiStatus" time="0.938"/>
-  <testcase name="verifyPostRequest" classname="org.quinnox.testautomation.verifypostrequest.VerifyPostRequestTest" time="2.438"/>
-  <testcase name="validateDataTest" classname="org.quinnox.testautomation.validatedatatest.ValidateDataTest" time="12.969"/>
-  <testcase name="verifyInvalidPostRequest" classname="org.quinnox.testautomation.postinvalidrequest.VerifyInvalidPostRequestTest" time="1.112">
-    <failure message="POSTING TO API IS FAILED! CHECK YOUR INPUT JSON expected [202] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: POSTING TO API IS FAILED! CHECK YOUR INPUT JSON expected [202] but found [200]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.quinnox.testautomation.postinvalidrequest.VerifyInvalidPostRequestTest.verifyInvalidPostRequest(VerifyInvalidPostRequestTest.java:46)
-</failure>
-  </testcase>
+  <testcase name="comparisonOfLineItems" classname="org.quinnox.testautomation.verifylineitems.ValidateLineItems" time="4"/>
 </testsuite>
