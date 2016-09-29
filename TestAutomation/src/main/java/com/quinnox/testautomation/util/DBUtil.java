@@ -9,7 +9,7 @@ public class DBUtil {
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
 			
 			System.out.println("Driver loaded and connecting...");
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@ebsdb4-uat.am.mot-mobility.com:1525/utoa081","webm","Motobtp$$");
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@ebsracv3-uat.am.mot-mobility.com:1525/utoa081","webm","Motobtp$$");
 			System.out.println("Connection to DB success!");
 			return con;
 		}
